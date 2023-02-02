@@ -10,7 +10,14 @@ const Profile = () => {
                         <img src="https://raw.githubusercontent.com/chandrahmani/chandrahmani.github.io/develop/chand-img.jpeg" />
                         <h2>Chand Rahmani</h2>
                         <h3> In ♥️ With Coding, 📷 Photography and Travelling and Cricket</h3>
-                        <h3>Specially ! HTML, Cascading Style Sheets, Styled_Components  , JavaScript , React_js ,</h3>
+                        <ul className='skills'>
+                            <li>Specially !</li>
+                            <li>HTML</li>
+                            <li>Cascading Style Sheets</li>
+                            <li>Styled_Components </li>
+                            <li>JavaScript</li>
+                            <li> React_js</li>
+                        </ul>
                     </div>
                     <div className="text-wrapper">
                         <p>I am a HTML Developer</p>

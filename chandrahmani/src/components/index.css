@@ -52,11 +52,16 @@ a {
 button {
     margin: 0.6rem;
     padding: 1rem;
-    background-color: #f05924;
+    background-color: #ffff;
     width: 30%;
     border: none;
     border-radius: 7px;
     color: #fff;
+}
+
+button:hover {
+    background-color: orange;
+    transition: all 0.5s ease;
 }
 
 .logo-wrapper h2 {
@@ -74,6 +79,25 @@ button {
 .logo-wrapper h3 {
     color: #fff;
     margin: 2rem 0;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    background-color: #ecd5d5;
+    padding: 0.5rem;
+    font-size: 10px;
+    border-radius: 7px;
+    margin-left: 0.3rem;
+    color: #000000;
+}
+
+ul li:hover {
+    background-color: #f8bf2f;
+    transition: all 0.5s ease;
 }
 
 @media screen and (max-width:400px) {
@@ -103,10 +127,6 @@ button {
         width: 100%;
     }
 
-    h3 {
-        margin-left: 2rem;
-        margin: 2rem 0;
-    }
 }
 
 @media screen and (max-width:700px) {
@@ -127,8 +147,5 @@ button {
         color: red;
     }
 
-    h3 {
-        margin-left: 2rem;
-        margin: 2rem;
-    }
+
 }
