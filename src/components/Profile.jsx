@@ -1,29 +1,22 @@
-import { Moon, SunDim } from 'phosphor-react';
-import { useState } from 'react';
 import './index.css'
 
-
-
 const Profile = () => {
-    const [click, setClick] = useState();
-
-    const handelClick = () => {
-        setClick(!click)
-    }
 
     return (
         <>
             <main className="main-wrapper">
-                <div className='theme'>
-                    <div onClick={handelClick}>
-                        {click ? <SunDim size={32} /> : <Moon size={32} />}
-                    </div>
-                </div>
                 <section className="profile-wrapper">
                     <div className="logo-wrapper">
-                        <img src="https://raw.githubusercontent.com/chandrahmani/chandrahmani.github.io/develop/chand-img.jpeg" />
-                        <h2>Chand Rahmani</h2>
-                        <h3> In ♥️ With Coding, 📷 Photography and Travelling and Cricket</h3>
+                        <img src="https://media.licdn.com/dms/image/C4E03AQFE_nEE3KyCtw/profile-displayphoto-shrink_400_400/0/1642938148788?e=1683158400&v=beta&t=REXRyle198rBn3WID-bCgk13wqKmeU1affNiFijPmEs" />
+                        <LinkedinLogo size={32} />
+
+                        <div className='info'>
+                            <h2>Chand Rahmani</h2>
+                            <h3> In ♥️ With Coding, 📷 Photography and Travelling and Cricket</h3>
+                        </div>
+                    </div>
+
+                    <div className='skill-wrp'>
                         <ul className='skills'>
                             <li>Specially !</li>
                             <li>HTML</li>
