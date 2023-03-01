@@ -11,15 +11,16 @@ const Div = styled.div`
   color: ${({ theme }) => theme.fg};
   border: 1px solid ${({ theme }) => theme.fg};
   font-size: 18px;
+  height: 100vh
 `;
 
 
 const themeDark = {
-  bg: "black"
+  bg: "#201f1f"
 };
 
 const themeLight = {
-  bg: "#fff"
+  bg: "#bdc7eb"
 };
 
 function App() {
