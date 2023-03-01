@@ -41,7 +41,6 @@ font-family: 'Zen Loop', cursive;
 }
 
 p {
-    margin: 1rem 0;
     color: #fff;
     font-weight: 600;
     align-self: center;
@@ -82,8 +81,9 @@ button:hover {
     font-weight: 600;
 }
 
-/* .main-wrapper {
-    background: linear-gradient(180deg, #4361c2, #6f91ff);
+/* 
+.main-wrapper {
+    background: linear-gradient(180deg, #4361c2, );
 } */
 
 .logo-wrapper h3 {
@@ -104,6 +104,7 @@ ul li {
     border-radius: 7px;
     margin-left: 0.3rem;
     color: #000000;
+    height: 4vh;
 }
 
 ul li:hover {
@@ -118,52 +119,43 @@ ul li:hover {
     border-radius: 5px;
 }
 
+.skill-wrp {
+    background: #23203d;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+    .skill-wrp {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .logo-wrapper img {
+        height: 140px;
+        width: 100px;
+        margin-right: 1rem;
+    }
+}
+
 @media screen and (max-width:400px) {
-    .button-wrapper {
+    .logo-wrapper {
+        margin: 1rem;
+    }
+
+    .skill-wrp {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width:630px) {
+    ul {
         flex-direction: column;
+        gap: 10px;
+        margin-left: 0rem;
     }
-}
-
-@media screen and (max-width:600px) {
-    button {
-        background: linear-gradient(259deg, #1753af, #0831b7);
-        border-radius: 7px;
-        border: none;
-        width: 50%;
-        align-self: center;
-    }
-}
-
-@media screen and (max-width:500px) {
-    .main-wrapper {
-        padding: 4rem;
-    }
-
-    p {
-        margin: 0 4rem;
-        flex-direction: column;
-        width: 100%;
-    }
-
-}
-
-@media screen and (max-width:700px) {
-    button:hover {
-        background: #fff;
-    }
-}
-
-@media sereen and (max-width: 320px) {
-    button {
-        width: 100%;
-        margin: 5rem;
-    }
-
-    p {
-        margin: 4rem;
-        flex-direction: column;
-        color: red;
-    }
-
-
 }
