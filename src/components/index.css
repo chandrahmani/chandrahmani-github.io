@@ -30,14 +30,13 @@ font-family: 'Zen Loop', cursive;
 }
 
 .logo-wrapper:hover {
-    background-color: black;
+    background-color: #1e1d1d;
     color: #fff;
 }
 
 .text-wrapper {
     display: flex;
     flex-direction: column;
-    margin-top: 3em;
 }
 
 p {

@@ -4,6 +4,10 @@
   will-change: filter;
 }
 
+h2 {
+  color: #ffff;
+}
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
