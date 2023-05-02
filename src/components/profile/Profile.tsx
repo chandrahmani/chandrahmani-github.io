@@ -61,7 +61,7 @@ const Profile = () => {
               <div className="mx-auto max-w-2xl lg:mx-0">
                 <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl"></h2>
                 <div className="mt-6 text-lg leading-8 text-gray-300">
-                  Specially !| | | | || | ||
+                  Specially !
                 </div>
               </div>
 
