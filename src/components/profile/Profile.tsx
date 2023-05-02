@@ -60,14 +60,16 @@ const Profile = () => {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-2xl lg:mx-0">
                 <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl"></h2>
-                <div className="mt-6 text-lg leading-8 text-gray-300">
+                <div className="ml-2 text-3xl">
                   <h1> Skill Set</h1>
                 </div>
               </div>
 
               <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
                 <div>
-                  <h3 className="ml-2 text-3xl">Specially </h3>
+                  <h3 className=" mt-6 text-lg leading-8 text-gray-300">
+                    Specially
+                  </h3>
                   <div>
                     <span className=" m-2 inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-200/10">
                       HTML
