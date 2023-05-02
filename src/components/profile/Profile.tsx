@@ -69,34 +69,34 @@ const Profile = () => {
                 <div>
                   <h2 className="ml-2 text-3xl"> Skill Set</h2>
                   <div>
-                    <span className=" m-2 inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-200/10">
+                    <span className=" m-2 inline-flex items-center rounded-md bg-gray-50 px-4 py-3 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-200/10">
                       HTML
                     </span>
-                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
+                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
                       CSS 3
                     </span>
-                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
+                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3text-xs font-medium text-blue-400 ring-1 ring-inset ring-red-800/10">
                       Styled_Components
                     </span>
-                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
+                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
                       JavaScript
                     </span>
-                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
+                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3 text-xs font-medium text-pink-400 ring-1 ring-inset ring-red-800/10">
                       React_js
                     </span>
-                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
+                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
                       SASS
                     </span>
-                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
+                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3 text-xs font-medium text-yellow-500 ring-1 ring-inset ring-red-800/10">
                       Git
                     </span>
-                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
+                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
                       Bootstrap 5
                     </span>
-                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
+                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3 text-xs font-medium text-orange-600 ring-1 ring-inset ring-red-800/10">
                       Next js
                     </span>
-                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
+                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
                       Tailwind Css
                     </span>
                   </div>
