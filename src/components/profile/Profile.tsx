@@ -1,14 +1,22 @@
 const Profile = () => {
   return (
     <div>
-      <main className="main-wrapper">
-        <header className="header-wrapper">
-          <div className="logo-wrapper">
-            <img src="https://media.licdn.com/dms/image/C4E03AQFE_nEE3KyCtw/profile-displayphoto-shrink_400_400/0/1642938148788?e=1683158400&v=beta&t=REXRyle198rBn3WID-bCgk13wqKmeU1affNiFijPmEs" />
-
-            <div className="info">
-              <h2>Chand Rahmani</h2>
-              <a href="https://www.google.com/maps/place/New+Delhi,+Delhi/@28.5273522,77.2089851,11z/data=!3m1!4b1!4m6!3m5!1s0x390cfd5b347eb62d:0x52c2b7494e204dce!8m2!3d28.6139391!4d77.2090212!16zL20vMGRsdjA">
+      <main>
+        <header className="m-3">
+          <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 p-3">
+            <img
+              className="object-cover  rounded-t-lg h-56 md:h-auto md:w-28 md:rounded-none md:rounded-l-lg"
+              src="https://media.licdn.com/dms/image/C4E03AQFE_nEE3KyCtw/profile-displayphoto-shrink_400_400/0/1642938148788?e=1683158400&v=beta&t=REXRyle198rBn3WID-bCgk13wqKmeU1affNiFijPmEs"
+              alt=""
+            />
+            <div className="flex flex-col justify-between p-4 leading-normal">
+              <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                Chand Rahmani
+              </h2>
+              <a
+                href="https://www.google.com/maps/place/New+Delhi,+Delhi/@28.5273522,77.2089851,11z/data=!3m1!4b1!4m6!3m5!1s0x390cfd5b347eb62d:0x52c2b7494e204dce!8m2!3d28.6139391!4d77.2090212!16zL20vMGRsdjA"
+                className="h:text-blue"
+              >
                 New Delhi , IND
               </a>
               <h3>I'm a React Developer Who Enjoy Creating Website</h3>
@@ -19,7 +27,7 @@ const Profile = () => {
           </div>
         </header>
         <section>
-          <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+          <div className="relative bg-grey  overflow-hidden bg-gray-500 py-24 sm:py-32">
             <img
               src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
               alt=""
@@ -55,47 +63,8 @@ const Profile = () => {
                   Skill Set
                 </h2>
                 <div className="mt-6 text-lg leading-8 text-gray-300">
-                  Specially !| | | | | | | | |
-                  <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-                    <div>
-                      <h2 className="ml-2 text-3xl">Web Development</h2>
-                      <div>
-                        <span className=" m-2 inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-200/10">
-                          HTML
-                        </span>
-                        <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
-                          CSS 3
-                        </span>
-                        <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
-                          Styled_Components
-                        </span>
-
-                        <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
-                          JavaScript
-                        </span>
-
-                        <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
-                          React_js
-                        </span>
-
-                        <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
-                          SASS
-                        </span>
-
-                        <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
-                          GIT
-                        </span>
-
-                        <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
-                          Next js
-                        </span>
-
-                        <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
-                          Tailwind Css
-                        </span>
-                      </div>
-                    </div>
-                  </div>
+                  Specially ! HTML | CSS 3 | Styled_Components | JavaScript |
+                  React_js | SASS | Git | Bootstrap 5 | Next js | Tailwind Css
                 </div>
               </div>
               <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
