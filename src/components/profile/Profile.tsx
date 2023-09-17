@@ -6,7 +6,7 @@ const Profile = () => {
           <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 p-3">
             <img
               className="object-cover  rounded-t-lg h-56 md:h-auto md:w-28 md:rounded-none md:rounded-l-lg"
-              src="https://media.licdn.com/dms/image/C4E03AQFE_nEE3KyCtw/profile-displayphoto-shrink_400_400/0/1642938148788?e=1683158400&v=beta&t=REXRyle198rBn3WID-bCgk13wqKmeU1affNiFijPmEs"
+              src="/image/chand.jpg"
               alt=""
             />
             <div className="flex flex-col justify-between p-4 leading-normal">
