@@ -61,52 +61,54 @@ const Profile = () => {
               <div className="mx-auto max-w-2xl lg:mx-0">
                 <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl"></h2>
                 <div className="mt-6 text-lg leading-8 text-gray-300">
-                  Specially !| | | | || | ||
+                  Skill Set
                 </div>
               </div>
 
               <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
                 <div>
-                  <h3 className=" mt-6 text-lg leading-8 text-gray-300">
+                  <h3 className="mt-6 text-lg leading-8 text-gray-300">
                     Specially
                   </h3>
                   <div>
-                    <span className=" m-2 inline-flex items-center rounded-md bg-gray-50 px-4 py-3 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-200/10">
+                    <span className="m-2 inline-flex items-center rounded-md bg-gray-50 px-4 py-3 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-200/10">
                       HTML
                     </span>
-                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
+                    <span className="m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
                       CSS 3
                     </span>
-                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3text-xs font-medium text-blue-400 ring-1 ring-inset ring-red-800/10">
+                    <span className="m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3text-xs font-medium text-blue-400 ring-1 ring-inset ring-red-800/10">
                       Styled_Components
                     </span>
-                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
+                    <span className="m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
                       JavaScript
                     </span>
-                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3 text-xs font-medium text-pink-400 ring-1 ring-inset ring-red-800/10">
+                    <span className="m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3 text-xs font-medium text-pink-400 ring-1 ring-inset ring-red-800/10">
                       React_js
                     </span>
-                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
+                    <span className="m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
                       SASS
                     </span>
-                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3 text-xs font-medium text-yellow-500 ring-1 ring-inset ring-red-800/10">
+                    <span className="m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3 text-xs font-medium text-yellow-500 ring-1 ring-inset ring-red-800/10">
                       Git
                     </span>
-                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
+                    <span className="m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
                       Bootstrap 5
                     </span>
-                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3 text-xs font-medium text-orange-600 ring-1 ring-inset ring-red-800/10">
+                    <span className="m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3 text-xs font-medium text-orange-600 ring-1 ring-inset ring-red-800/10">
                       Next js
                     </span>
-                    <span className=" m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
+                    <span className="m-2 inline-flex items-center rounded-md bg-red-50 px-4 py-3 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-800/10">
                       Tailwind Css
                     </span>
                   </div>
                 </div>
               </div>
               <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-                <p>I am a HTML Developer</p>
-                <p>My Name is Chand I Am In 12th Class I Like Programming</p>
+                <p className="text-gray-300">I am a HTML Developer</p>
+                <p className="text-gray-300 ">
+                  My Name is Chand I Am In 12th Class I Like Programming
+                </p>
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10"></div>
                 <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4"></dl>
               </div>
