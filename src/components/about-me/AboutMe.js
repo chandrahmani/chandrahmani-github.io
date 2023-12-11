@@ -1,4 +1,3 @@
-import mypic from './../../assets/images/ar-bikee.jpg';
 const AboutMe=()=>{
     return(
         <>

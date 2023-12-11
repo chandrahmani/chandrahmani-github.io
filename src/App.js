@@ -1,12 +1,12 @@
 
+import MeetMe from 'components/meet-me/MeetMe';
 import './App.scss';
+import MySkils from 'components/mySkils/MySkils';
+import Dashboard from 'components/dashboard/Dashboard';
+import Header from 'components/shared/header/Header';
+import Footer from 'components/shared/footer/Footer';
 
-import MeetMe from './components/meet-me/MeetMe';
-import Header from './components/shared/header/Header';
-import Dashboard from './components/dashboard/Dashboard';
-import Footer from './components/shared/footer/Footer';
-import MySkils from './components/mySkils/MySkils';
-import AboutMe from './components/about-me/AboutMe';
+
 function App() {
 
   return (

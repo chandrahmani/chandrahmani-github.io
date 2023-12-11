@@ -1,10 +1,7 @@
-import TollIcon from '@material-ui/icons/Toll';
-import TrendingUpIcon from '@material-ui/icons/TrendingUp';
-import WorkOutlineIcon from '@material-ui/icons/WorkOutline';
-import WeekendIcon from '@material-ui/icons/Weekend';
-import banner1 from './../../assets/images/banner1.jpg';
-import bg from './../../assets/images/background.jpg';
-import { Link } from '@material-ui/icons';
+import TrendingUpIcon from '@mui/icons-material/TrendingUp';
+import TollIcon from '@mui/icons-material/Toll';
+import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
+
 
 const Dashboard = () => {
     return (

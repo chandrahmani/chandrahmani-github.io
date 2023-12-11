@@ -5,11 +5,11 @@ const MySkils = () => {
             <h2 className="center">My Overall Skills</h2>
             <h5 className="center"> (But still Improving and Learning new) </h5>
 
-            <p>Angular6+</p>
+            <p>HTML5</p>
             <div class="skils-wrapper">
                 <div class="skills top">90%</div>
             </div>
-            <p>ReactJs</p>
+            <p>CSS3</p>
             <div class="skils-wrapper">
                 <div class="skills top">90%</div>
             </div>
@@ -17,18 +17,7 @@ const MySkils = () => {
 
             <p>JavaScript</p>
             <div class="skils-wrapper">
-                <div class="skills best">80%</div>
-            </div>
-
-
-            <p>HTML5</p>
-            <div class="skils-wrapper">
-                <div class="skills top">90%</div>
-            </div>
-
-            <p>CSS3</p>
-            <div class="skils-wrapper">
-                <div class="skills top">90%</div>
+                <div class="skills best">70%</div>
             </div>
 
             <p>Sass, Material Ui, Bootstrap</p>
@@ -38,7 +27,7 @@ const MySkils = () => {
 
            
 
-            <p>Github, Jira</p>
+            <p>Github, Git</p>
             <div class="skils-wrapper">
                 <div class="skills top">90%</div>
             </div>
@@ -48,12 +37,12 @@ const MySkils = () => {
                 <div class="skills top">90%</div>
             </div>
 
-            <p>NodeJs and ExpressJs</p>
+            <p>Nextjs </p>
             <div class="skils-wrapper">
-                <div class="skills average">60%</div>
+                <div class="skills average">70%</div>
             </div>
 
-            <p>Windows / MS Office, Adobe Photoshop</p>
+            <p>Windows / MS Office, Adobe Photoshop / Excel </p>
             <div class="skils-wrapper">
                 <div class="skills good">70%</div>
             </div>

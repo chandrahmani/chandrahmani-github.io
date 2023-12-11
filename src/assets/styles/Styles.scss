@@ -194,49 +194,49 @@ body {
 
 //720
 
-@media screen and(max-width: 720px) {
-  .main-container .details-section .intro p {
-    font-size: 17px;
-  }
-  .main-container .dashboard-container .box-wrapper {
-    display: block;
-    padding: 4px;
-    .boxes {
-      width: 81%;
-      .icons-wrapper {
-        max-width: 44px;
-        svg {
-          font-size: 36px;
-        }
-      }
-    }
-  }
-}
+// @media screen and (max-width: 720px) {
+//   .main-container .details-section .intro p {
+//     font-size: 17px;
+//   }
+//   .main-container .dashboard-container .box-wrapper {
+//     display: block;
+//     padding: 4px;
+//     .boxes {
+//       width: 81%;
+//       .icons-wrapper {
+//         max-width: 44px;
+//         svg {
+//           font-size: 36px;
+//         }
+//       }
+//     }
+//   }
+// }
 
 //
-@media screen and(max-width: 580px) {
-  .main-container {
-    .details-section {
-      .contact-wrapper {
-        .social {
-          font-size: 9px;
-        }
-        .contact {
-          font-size: 17px;
-        }
-      }
-    }
-  }
-}
+// @media screen and(max-width: 580px) {
+//   .main-container {
+//     .details-section {
+//       .contact-wrapper {
+//         .social {
+//           font-size: 9px;
+//         }
+//         .contact {
+//           font-size: 17px;
+//         }
+//       }
+//     }
+//   }
+// }
 
-@media screen and(max-width: 320px) {
-  .main-container {
-    .details-section {
-      .personal-details-wrapper {
-        .name {
-          font-size: 28px;
-        }
-      }
-    }
-  }
-}
+// @media screen and(max-width: 320px) {
+//   .main-container {
+//     .details-section {
+//       .personal-details-wrapper {
+//         .name {
+//           font-size: 28px;
+//         }
+//       }
+//     }
+//   }
+// }
