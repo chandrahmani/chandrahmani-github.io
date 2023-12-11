@@ -1,0 +1,31 @@
+* {box-sizing: border-box}
+.skils-container{
+    width: 80%;
+    margin: 0 auto;
+    //margin: 1rem 0;
+.skils-wrapper {
+    width: 80%;
+    background-color: #ddd;
+  }
+  
+  .skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 1rem 0;
+    color: white;
+    height: 35px
+  }
+
+  .top {width: 90%; background-color: #04AA6D;}
+  .best {width: 80%; background-color: #008905;}
+  .good {width: 70%; background-color: #795548;}
+  .average {width: 60%; background-color: #808080;}
+  .learning {width: 50%; background-color: #d31694;}
+  .idea {width: 40%; background-color: #b90808;}
+  //
+    p{
+      font-weight: 500;
+      font-size: 23px;
+    }
+}

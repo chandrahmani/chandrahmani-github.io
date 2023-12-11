@@ -1,0 +1,242 @@
+body {
+  font-family: "Roboto Mono", monospace;
+}
+.logoLetteer {
+  color: red;
+  background: white;
+  padding: 1px 2px;
+  border-radius: 2px;
+  margin-right: 1px;  
+}
+
+.main-container {
+  .heading-wrapper {
+    .meetMe {
+      text-align: center;
+      font-size: 27px;
+      letter-spacing: 1px;
+      border: solid 0.5px;
+      padding: 12px 3px;
+      width: 44%;
+    }
+  }
+
+  .details-section {
+    left: 13%;
+    //  background-color: /*rgb(228, 215, 215)*/ rgb(29, 29, 29 / 63%);
+    display: flex;
+    top: 201px;
+    border-radius: 9px;
+    padding-right: 21px;
+    .dp-img-wrapper {
+      width: 60%;
+      #my-pic {
+        width: 88%;
+        height: 77%;
+        margin: 26px 0px 0px 26px;
+        border: solid white 5px;
+        border-radius: 16px;
+      }
+    }
+
+    .personal-details-wrapper {
+      width: 38%;
+      padding-top: 37px;
+      padding-left: 19px;
+      .intro h3 {
+        word-spacing: 4px;
+        color: #ebdfdff0;
+      }
+      .name {
+        font-size: 37px;
+        margin: 16px 0;
+        word-spacing: 8px;
+      }
+
+      .education {
+        margin-bottom: 20px;
+        font-size: 15px;
+        text-align: center;
+      }
+    }
+
+    .intro p {
+      background-color: #f8f7f7;
+      padding: 15px;
+      border-radius: 6px;
+      font-size: 22px;
+      word-spacing: 5px;
+      outline-style: double;
+    }
+
+    .contact-wrapper {
+      margin: 41px 0px;
+      padding: 30px 0px;
+      a {
+        text-decoration: none;
+        display: block;
+      }
+      .contact {
+        margin-top: 18px;
+        color: #565e8d;
+        font-weight: 500;
+        font-size: 24px;
+        &:hover {
+          opacity: 70%;
+        }
+      }
+      .contct-icon {
+        margin-right: 16px;
+      }
+
+      .social {
+        display: flex;
+        a {
+          padding: 6px 15px;
+          margin: 24px 9px 0px 0px;
+          color: white;
+          border-radius: 5px;
+          &:hover {
+            opacity: 70%;
+            transition: 1s;
+            box-sizing: 1px 1px 1px grey;
+          }
+        }
+
+        .fb {
+          background-color: #3b5998;
+        }
+        .twiter {
+          background-color: #00acee;
+        }
+        .linkedin {
+          background-color: #0e76a8;
+        }
+        .insta {
+          background: #d6249f;
+          background: radial-gradient(
+            circle at 30% 107%,
+            #fdf497 0%,
+            #fdf497 5%,
+            #fd5949 45%,
+            #d6249f 60%,
+            #285aeb 90%
+          );
+        }
+        .github {
+          background-color: #4078c0;
+        }
+      }
+    }
+  }
+  .bottom-section {
+    height: 400px;
+    background-color: #f9f6f663;
+  }
+
+  .footer {
+    height: 100px;
+    background-image: linear-gradient(-90deg, #282826, #4a4a4a);
+  }
+
+  .grey {
+    color: #706565de;
+  }
+
+  .white {
+    color: white;
+  }
+
+  .shado-effect {
+    background-image: linear-gradient(45deg, #aea9ae00, #d8d8d43b);
+  }
+
+  .clr-effect-text {
+    // background-image: linear-gradient(
+    //     45deg
+    //     , #a6cbfb, #df9a9acc);
+    border-radius: 6px;
+    padding: 9px 8px;
+    font-weight: bold;
+    background: #e8e6e6;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+  }
+}
+
+.anayt {
+  margin: 0 2px;
+}
+
+///responsive
+
+@media screen and (max-width: 1020px) {
+  .main-container {
+    .details-section {
+      flex-direction: column-reverse;
+      .contact-wrapper {
+      }
+      .dp-img-wrapper {
+        width: 100%;
+      }
+      .personal-details-wrapper {
+        width: 100%;
+      }
+      .name {
+        text-align: center;
+      }
+      .main-container .details-section .contact-wrapper {
+        padding-left: 6rem;
+      }
+    }
+  }
+}
+
+//720
+
+@media screen and(max-width: 720px) {
+  .main-container .details-section .intro p {
+    font-size: 17px;
+  }
+  .main-container .dashboard-container .box-wrapper {
+    display: block;
+    padding: 4px;
+    .boxes {
+      width: 81%;
+      .icons-wrapper {
+        max-width: 44px;
+        svg {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+}
+
+//
+@media screen and(max-width: 580px) {
+  .main-container {
+    .details-section {
+      .contact-wrapper {
+        .social {
+          font-size: 9px;
+        }
+        .contact {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 320px) {
+  .main-container {
+    .details-section {
+      .personal-details-wrapper {
+        .name {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
