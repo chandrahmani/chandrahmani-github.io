@@ -1,14 +1,13 @@
+import Image from "next/image";
+import img from "../../../public/IMG_(2).jpg";
+
 const Profile = () => {
   return (
     <div>
       <main>
         <header className="m-3">
           <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 p-3">
-            <img
-              className="object-cover  rounded-t-lg h-56 md:h-auto md:w-28 md:rounded-none md:rounded-l-lg"
-              src="https://media.licdn.com/dms/image/C4E03AQFE_nEE3KyCtw/profile-displayphoto-shrink_400_400/0/1642938148788?e=1683158400&v=beta&t=REXRyle198rBn3WID-bCgk13wqKmeU1affNiFijPmEs"
-              alt=""
-            />
+            <Image src={img} alt="img" placeholder="blur" width={200} />
             <div className="flex flex-col justify-between p-4 leading-normal">
               <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 Chand Rahmani
