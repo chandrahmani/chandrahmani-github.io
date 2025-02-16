@@ -1,11 +1,27 @@
 import Image from "next/image";
 import img from "../../../public/IMG_(2).jpg";
+import { useState } from "react";
 
 const Profile = () => {
+  const [darkMode, setDarkMode] = useState(true);
   return (
-    <div>
-      <main>
+    <div
+      className={` items-center justify-center min-h-screen p-6 transition-colors duration-300 ${
+        darkMode ? "bg-gray-900 text-white" : "bg-white text-"
+      }`}
+    >
+      <main
+        className={` items-center justify-center min-h-screen p-6 transition-colors duration-300 ${
+          darkMode ? "bg-gray-900 text-black" : "bg-white text-black"
+        }`}
+      >
         <header className="m-3">
+          <button
+            onClick={() => setDarkMode(!darkMode)}
+            className="absolute top-4 right-4 p-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600"
+          >
+            {darkMode ? "Light Mode" : "Dark Mode"}
+          </button>
           <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 p-3">
             <Image src={img} alt="img" placeholder="blur" width={200} />
             <div className="flex flex-col justify-between p-4 leading-normal">
