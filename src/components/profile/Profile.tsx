@@ -6,13 +6,13 @@ const Profile = () => {
   const [darkMode, setDarkMode] = useState(true);
   return (
     <div
-      className={` items-center justify-center min-h-screen p-6 transition-colors duration-300 ${
-        darkMode ? "bg-gray-900 text-white" : "bg-white text-"
+      className={` items-center justify-center min-h-screen  transition-colors duration-300 ${
+        darkMode ? "bg-gray-900 text-white" : "bg-grey-500 text-"
       }`}
     >
       <main
         className={` items-center justify-center min-h-screen p-6 transition-colors duration-300 ${
-          darkMode ? "bg-gray-900 text-black" : "bg-white text-black"
+          darkMode ? "bg-gray-900 text-black" : "bg-grey-900 text-black"
         }`}
       >
         <header className="m-3">
