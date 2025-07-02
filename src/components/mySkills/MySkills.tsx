@@ -33,16 +33,6 @@ export const MySkills = () => {
             <div className="skills top">90%</div>
           </div>
 
-          <p>JavaScript</p>
-          <div className="skils-wrapper">
-            <div className="skills best">60%</div>
-          </div>
-
-          <p>React Js</p>
-          <div className="skils-wrapper">
-            <div className="skills average">80%</div>
-          </div>
-
           <p>Next Js</p>
           <div className="skils-wrapper">
             <div className="skills best">60%</div>
@@ -51,6 +41,16 @@ export const MySkills = () => {
           <p>Windows / MS Office, Adobe Photoshop</p>
           <div className="skils-wrapper">
             <div className="skills good">70%</div>
+          </div>
+
+          <p>React Js</p>
+          <div className="skils-wrapper">
+            <div className="skills average">80%</div>
+          </div>
+
+          <p>JavaScript</p>
+          <div className="skils-wrapper">
+            <div className="skills best">60%</div>
           </div>
         </div>
       </div>

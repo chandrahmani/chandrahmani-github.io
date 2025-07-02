@@ -7,12 +7,12 @@ const Profile = () => {
   return (
     <div
       className={` items-center justify-center min-h-screen  transition-colors duration-300 ${
-        darkMode ? "bg-gray-900 text-white" : "bg-grey-500 text-"
+        darkMode ? "bg-gray-900 text-white" : "bg-grey-900 text-black"
       }`}
     >
       <main
         className={` items-center justify-center min-h-screen p-6 transition-colors duration-300 ${
-          darkMode ? "bg-gray-900 text-black" : "bg-grey-900 text-black"
+          darkMode ? "bg-gray-900 text-white" : "bg-grey-900 text-black"
         }`}
       >
         <header className="m-3">
@@ -25,17 +25,19 @@ const Profile = () => {
           <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 p-3">
             <Image src={img} alt="img" placeholder="blur" width={200} />
             <div className="flex flex-col justify-between p-4 leading-normal">
-              <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <h2 className="mb-2 text-2xl font-bold tracking-tight text-black dark:text-white">
                 Chand Rahmani
               </h2>
               <a
                 href="https://www.google.com/maps/place/New+Delhi,+Delhi/@28.5273522,77.2089851,11z/data=!3m1!4b1!4m6!3m5!1s0x390cfd5b347eb62d:0x52c2b7494e204dce!8m2!3d28.6139391!4d77.2090212!16zL20vMGRsdjA"
-                className="h:text-blue"
+                className="h:text-blue text-black"
               >
                 New Delhi , IND
               </a>
-              <h3>I'm a React Developer Who Enjoy Creating Website</h3>
-              <h3>
+              <h3 className="text-black">
+                I'm a React Developer Who Enjoy Creating Website
+              </h3>
+              <h3 className="text-black">
                 In ♥️ With Coding, 📷 Photography and Traveling and Cricket
               </h3>
             </div>
