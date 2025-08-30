@@ -1,84 +1,223 @@
-import Image from "next/image";
+import { useMemo, useState } from "react";
 import img from "../../../public/IMG_(2).jpg";
-import { useState } from "react";
+import {
+  Avatar,
+  Box,
+  Button,
+  Card,
+  CardActions,
+  CardContent,
+  createTheme,
+  CssBaseline,
+  Divider,
+  Grid,
+  ThemeProvider,
+  Typography,
+} from "@mui/material";
+import Link from "next/link";
+import Image from "next/image";
 
 const Profile = () => {
-  const [darkMode, setDarkMode] = useState(true);
-  return (
-    <div
-      className={` items-center justify-center min-h-screen  transition-colors duration-300 ${
-        darkMode ? "bg-gray-900 text-white" : "bg-grey-900 text-black"
-      }`}
-    >
-      <main
-        className={` items-center justify-center min-h-screen p-6 transition-colors duration-300 ${
-          darkMode ? "bg-gray-900 text-white" : "bg-grey-900 text-black"
-        }`}
-      >
-        <header className="m-3">
-          <button
-            onClick={() => setDarkMode(!darkMode)}
-            className="absolute top-4 right-4 p-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600"
-          >
-            {darkMode ? "Light Mode" : "Dark Mode"}
-          </button>
-          <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 p-3">
-            <Image src={img} alt="img" placeholder="blur" width={200} />
-            <div className="flex flex-col justify-between p-4 leading-normal">
-              <h2 className="mb-2 text-2xl font-bold tracking-tight text-black dark:text-white">
-                Chand Rahmani
-              </h2>
-              <a
-                href="https://www.google.com/maps/place/New+Delhi,+Delhi/@28.5273522,77.2089851,11z/data=!3m1!4b1!4m6!3m5!1s0x390cfd5b347eb62d:0x52c2b7494e204dce!8m2!3d28.6139391!4d77.2090212!16zL20vMGRsdjA"
-                className="h:text-blue text-black"
-              >
-                New Delhi , IND
-              </a>
-              <h3 className="text-black">
-                I'm a React Developer Who Enjoy Creating Website
-              </h3>
-              <h3 className="text-black">
-                In ♥️ With Coding, 📷 Photography and Traveling and Cricket
-              </h3>
-            </div>
-          </div>
-        </header>
-        <section>
-          <div className="relative   overflow-hidden  py-24 sm:py-32">
-            <div
-              className="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
-              aria-hidden="true"
-            >
-              <div
-                className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
-                style={{
-                  clipPath:
-                    "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-                }}
-              />
-            </div>
-            <div className=" text-center lg:px-8">
-              <div className="mx-auto max-w-2xl lg:mx-0">
-                <h2 className="text-4xl font-bold tracking-tight  sm:text-4xl"></h2>
-                <div className="ml-2 text-3xl">
-                  <h1> </h1>
-                </div>
-              </div>
-              <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-                <p className="name-wrp"> Welcome TO My Github Profile</p>
-              </div>
+  const [mode, setMode] = useState<"light" | "dark">("light");
+  const theme = useMemo(
+    () =>
+      createTheme({
+        palette: {
+          mode,
+          primary: {
+            main: mode === "light" ? "#1976d2" : "#90caf9",
+          },
+          background: {
+            default: mode === "light" ? "#fafafa" : "#121212",
+          },
+        },
+        shape: { borderRadius: 12 },
+      }),
+    [mode]
+  );
 
-              <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-                <div>
-                  <h3 className=" mt-6 text-lg leading-8 text-gray-300"></h3>
-                  <div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
+  const toggleTheme = () =>
+    setMode((prev) => (prev === "light" ? "dark" : "light"));
+
+  const skills = [
+    { title: "React", desc: "Building modern web UIs" },
+    { title: "TypeScript", desc: "Strongly typed JS" },
+    { title: "MUI", desc: "Elegant component library" },
+    { title: "Next.js", desc: "Fullstack React framework" },
+    { title: "JavaScript", desc: "Backend with JavaScript" },
+    { title: "GitHub", desc: "Version control & CI/CD" },
+    { title: "GitHub", desc: "Version control & CI/CD" },
+  ];
+
+  const projects = [
+    {
+      title: "Portfolio Website",
+      desc: "Personal website built with React + MUI.",
+      link: "https://github.com/chandrahmani/portfolio",
+    },
+    {
+      title: "Clothing Store",
+      desc: "E-commerce store with cart, filters & wishlist.",
+      link: "https://github.com/chandrahmani/clothing-store",
+    },
+    {
+      title: "Tour & Travel",
+      desc: "Travel booking site using Next.js & MUI.",
+      link: "https://www.hellotravelindia.in/",
+    },
+  ];
+
+  return (
+    <>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Box sx={{ bgcolor: "#f9f9f9", minHeight: "100vh" }}>
+          {/* Hero Section */}
+          <Box
+            sx={{display:'flex' , flexDirection:{xs: 'column' , md:'row'} , alignItems:'center' , p:3}}
+          >
+            <Box textAlign="center">
+              <Image src={img} width={200} height={300} alt='Me'/>
+              <Typography variant="h5" fontWeight="bold" mt={2}>
+                Chandrahmani
+              </Typography>
+              <Typography variant="subtitle1">💻 Software Engineer</Typography>
+              <Typography variant="body2">📍 Delhi, IND 🇮🇳</Typography>
+              <Typography variant="body2">
+                🌐 Languages: English, Hindi
+              </Typography>
+            </Box>
+            <Box maxWidth={500}>
+              <Typography variant="h6">Hi 👋 Good evening ☁️</Typography>
+              <Typography variant="body1" mt={1}>
+                My name is Chandrahmani, I am a senior front-end developer. I
+                enjoy solving problems and building efficient, creative
+                solutions.
+              </Typography>
+              <Typography variant="body2" mt={1}>
+                "I love coding, photography, and traveling."
+              </Typography>
+              <Box mt={2}>
+                <Button variant="contained" sx={{ mr: 2 }}>
+                  Say Hi
+                </Button>
+                <Button variant="outlined">Book my calendar</Button>
+              </Box>
+            </Box>
+          </Box>
+
+          <Divider />
+
+          <Box textAlign="center" sx={{ mb: 6 }}>
+            <Typography variant="h6" color="text.secondary">
+              Developer • Designer • Problem Solver
+            </Typography>
+          </Box>
+
+          {/* Skills Section */}
+          <Box sx={{ maxWidth: "1000px", width: "100%", mb: 8 }}>
+            <Typography
+              variant="h4"
+              textAlign="center"
+              fontWeight="bold"
+              gutterBottom
+            >
+              Skills
+            </Typography>
+            <Grid container spacing={3}>
+              {skills.map((skill, i) => (
+                <Card
+                  sx={{
+                    height: "100%",
+                    boxShadow: 3,
+                    transition: "0.3s",
+                    "&:hover": { transform: "translateY(-5px)", boxShadow: 6 },
+                  }}
+                >
+                  <CardContent>
+                    <Typography variant="h6" fontWeight="bold">
+                      {skill.title}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {skill.desc}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              ))}
+            </Grid>
+          </Box>
+
+          {/* Projects Section */}
+          <Box sx={{ maxWidth: "1000px", width: "100%", mb: 8 }}>
+            <Typography
+              variant="h4"
+              textAlign="center"
+              fontWeight="bold"
+              gutterBottom
+            >
+              Projects
+            </Typography>
+            <Grid container spacing={3}>
+              {projects.map((proj, i) => (
+                <Card
+                  sx={{
+                    height: "100%",
+                    boxShadow: 3,
+                    transition: "0.3s",
+                    "&:hover": { transform: "translateY(-5px)", boxShadow: 6 },
+                  }}
+                >
+                  <CardContent>
+                    <Typography variant="h6" fontWeight="bold">
+                      {proj.title}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {proj.desc}
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button
+                      size="small"
+                      component={Link}
+                      href={proj.link}
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      View on GitHub
+                    </Button>
+                  </CardActions>
+                </Card>
+              ))}
+            </Grid>
+          </Box>
+
+          {/* Contact Section */}
+          <Box
+            sx={{
+              textAlign: "center",
+              py: 4,
+              borderTop: "1px solid",
+              borderColor: "divider",
+              mt: "auto",
+              width: "100%",
+            }}
+          >
+            <Typography variant="h6" fontWeight="bold">
+              📧 Contact
+            </Typography>
+            <Typography variant="body1" color="text.secondary" gutterBottom>
+              Have a project in mind? Let’s connect!
+            </Typography>
+            <Typography variant="body1">
+              Email
+              <Link href="mailto:chandrahmani@example.com">
+                chandrahmani@example.com
+              </Link>
+            </Typography>
+          </Box>
+        </Box>
+      </ThemeProvider>
+    </>
   );
 };
 
