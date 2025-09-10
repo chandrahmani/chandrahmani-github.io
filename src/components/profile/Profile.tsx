@@ -36,8 +36,7 @@ const Profile = () => {
     [mode]
   );
 
-  const toggleTheme = () =>
-    setMode((prev) => (prev === "light" ? "dark" : "light"));
+  const toggleTheme = () => setMode((prev) => (prev === "light" ? "dark" : "light"));
 
   const skills = [
     { title: "React", desc: "Building modern web UIs" },
