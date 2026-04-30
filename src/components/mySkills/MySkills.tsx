@@ -1,59 +1,50 @@
+import { Box, LinearProgress, Typography } from "@mui/material";
+
 export const MySkills = () => {
   return (
-    <>
-      <div className="skils-container">
-        <div className="skils-wrp">
-          <div className="overall-skills">
-            <h2 className="center">My Overall Skills</h2>
-            <h5 className="center">Still Improving And Learning </h5>
-          </div>
+    //professional design skills 
 
-          <p>HTML5</p>
-          <div className="skils-wrapper">
-            <div className="skills top">90%</div>
-          </div>
 
-          <p>CSS3</p>
-          <div className="skils-wrapper">
-            <div className="skills top">90%</div>
-          </div>
-
-          <p>Sass, Material Ui, Bootstrap</p>
-          <div className="skils-wrapper">
-            <div className="skills best">60%</div>
-          </div>
-
-          <p>Github, Git</p>
-          <div className="skils-wrapper">
-            <div className="skills top">90%</div>
-          </div>
-
-          <p>Responsive Web Design</p>
-          <div className="skils-wrapper">
-            <div className="skills top">90%</div>
-          </div>
-
-          <p>Next Js</p>
-          <div className="skils-wrapper">
-            <div className="skills best">60%</div>
-          </div>
-
-          <p>Windows / MS Office, Adobe Photoshop</p>
-          <div className="skils-wrapper">
-            <div className="skills good">70%</div>
-          </div>
-
-          <p>React Js</p>
-          <div className="skils-wrapper">
-            <div className="skills average">80%</div>
-          </div>
-
-          <p>JavaScript</p>
-          <div className="skils-wrapper">
-            <div className="skills best">60%</div>
-          </div>
-        </div>
-      </div>
-    </>
+    <Box>
+      <Typography variant="h4" gutterBottom>
+        My Skills
+      </Typography>
+      <Box>
+        <Typography variant="body1">HTML5</Typography>
+        <LinearProgress variant="determinate" value={90} />
+      </Box>
+      <Box>
+        <Typography variant="body1">CSS3</Typography>
+        <LinearProgress variant="determinate" value={90} />
+      </Box>
+      <Box>
+        <Typography variant="body1">Sass, Material Ui, Bootstrap</Typography>
+        <LinearProgress variant="determinate" value={60} />
+      </Box>
+      <Box>
+        <Typography variant="body1">Github, Git</Typography>
+        <LinearProgress variant="determinate" value={90} />
+      </Box>
+      <Box>
+        <Typography variant="body1">Responsive Web Design</Typography>
+        <LinearProgress variant="determinate" value={90} />
+      </Box>
+      <Box>
+        <Typography variant="body1">Next Js</Typography>
+        <LinearProgress variant="determinate" value={60} />
+      </Box>
+      <Box>
+        <Typography variant="body1">Windows / MS Office, Adobe Photoshop</Typography>
+        <LinearProgress variant="determinate" value={70} />
+      </Box>
+      <Box>
+        <Typography variant="body1">React Js</Typography>
+        <LinearProgress variant="determinate" value={80} />
+      </Box>
+      <Box>
+        <Typography variant="body1">JavaScript</Typography>
+        <LinearProgress variant="determinate" value={60} />
+      </Box>
+    </Box>
   );
 };
