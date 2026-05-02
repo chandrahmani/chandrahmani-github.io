@@ -2,8 +2,7 @@ import { Box, LinearProgress, Typography } from "@mui/material";
 
 export const MySkills = () => {
   return (
-    //professional design skills 
-
+    //professional design skills
 
     <Box>
       <Typography variant="h4" gutterBottom>
@@ -34,7 +33,9 @@ export const MySkills = () => {
         <LinearProgress variant="determinate" value={60} />
       </Box>
       <Box>
-        <Typography variant="body1">Windows / MS Office, Adobe Photoshop</Typography>
+        <Typography variant="body1">
+          Windows / MS Office, Adobe Photoshop
+        </Typography>
         <LinearProgress variant="determinate" value={70} />
       </Box>
       <Box>
